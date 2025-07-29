@@ -78,6 +78,8 @@ const removeLink = () => {
 
 <template>
   <header>
+    <span class="space"></span>
+
     <!-- Heading -->
     <button
       :class="{ active: props.editor.isActive('heading', { level: 1 }) }"
@@ -231,18 +233,21 @@ const removeLink = () => {
     >
       <AlignJustify :size="props.size" />
     </button>
+
+    <span class="space"></span>
   </header>
 </template>
 
 <style scoped>
 header {
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 1200px;
   gap: 0.3rem;
-  width: 100%;
+  max-width: 100%;
   padding: 1rem;
   border-bottom: 1px solid #eee;
+  overflow-x: auto;
 }
 
 button {
@@ -292,6 +297,9 @@ button:hover {
   border-radius: 1rem;
 }
 
+span.space {
+  flex: 1 1 auto;
+}
 span.separator {
   margin: 0 1rem;
   width: 1px;
