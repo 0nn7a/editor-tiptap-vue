@@ -248,6 +248,7 @@ header {
   padding: 1rem;
   border-bottom: 1px solid #eee;
   overflow-x: auto;
+  overflow: visible;
 }
 
 button {
@@ -288,7 +289,6 @@ button:hover {
 .container .popup input {
   font-size: 1.4rem;
   color: #333;
-  placeholder-color: #aaa;
   border: none;
   outline: none;
 }
